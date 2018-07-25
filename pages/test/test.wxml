@@ -1,0 +1,7 @@
+<!--pages/test/test.wxml-->
+<import src="../template/template.wxml" />
+<view wx:for="{{items}}">
+  <view class="temp-view">
+    <template is="quantity" data="{{ ...item,index:index}}" />
+  </view> 
+</view>
